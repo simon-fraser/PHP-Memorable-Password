@@ -1,13 +1,12 @@
 <?php
-
 /*
 * Generating Memorable Passwords
 */
-class password {
+class Password {
 
    /*
-   * Spoken Elements Array
-   * Accessable from other password methods
+   * Spoken Words Elements Array
+   * Only accessable from other password methods
    */
    private static $element = Array('able','about','above','accept','accident','accuse','across','act','activist','actor','add','administration','admit','advise','affect','afraid','after','again','against','age','agency','aggression','ago','agree','agriculture','aid','aim','air','airplane','airport','alive','all','ally','almost','alone','along','already','also','although','always','ambassador','amend','ammunition','among','amount','anarchy','ancient','anger','animal','anniversary','announce','another','answer','any','apologize','appeal','appear','appoint','approve','area','argue','arms','army','around','arrest','arrive','art','artillery','as','ash','ask','assist','astronaut','asylum','atmosphere','atom','attack','attempt','attend','automobile','autumn','awake','award','away',
                  'back','bad','balance','ball','balloon','ballot','ban','bank','bar','base','battle','beach','beat','beauty','because','become','bed','beg','begin','behind','believe','bell','belong','below','best','betray','better','between','big','bill','bird','bite','bitter','black','blame','blanket','bleed','blind','block','blood','blow','blue','boat','body','boil','bomb','bone','book','border','born','borrow','both','bottle','bottom','box','boy','brain','brave','bread','break','breathe','bridge','brief','bright','bring','broadcast','brother','brown','build','bullet','burn','burst','bury','bus','business','busy',
@@ -38,8 +37,8 @@ class password {
    * @param  $length(int) - Length of word string
    * @return (string) - Generated memorable password
    */
-   public function memorable($length=2){
-      $password = "";
+   public function memorable($length=2) {
+      $password = ""; // Empty String
 
       //Loop and fetch a word from elements
       for ($i=0; $i<$length; $i++) {
@@ -50,5 +49,4 @@ class password {
       return $password;
    }
 
-
-} //!password class end
+} //Password class end
