@@ -4,5 +4,7 @@ PHP Memorable Password Method
 PHP Method for creating memorable passwords
 
 Example useage
+`$newpassword = Password::memorable();`
 
-   $newpassword = password::memorable();
+Longer Password
+`Password::memorable(3);`
